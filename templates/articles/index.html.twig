@@ -19,10 +19,10 @@
                 <tbody>
                     {% for article in articles %}
                         <tr>
-                        <td>{{ article }}</td>
+                        <td>{{ article.title }}</td>
                         <td>
                             <div class="btn-group btn-group-sm" role="group" aria-label="Basic example">
-                                <a href="#" type="button" class="btn btn-sm btn-primary"><i class="bi bi-eye-fill"></i></a>
+                                <a href="/symfapp/public/article/{{ article.id }}" type="button" class="btn btn-sm btn-primary"><i class="bi bi-eye-fill"></i></a>
                                 <a href="#" type="button" class="btn btn-sm btn-warning"><i class="bi bi-pencil"></i></a>
                                 <a href="#" type="button" class="btn btn-sm btn-danger"><i class="bi bi-trash-fill"></i></a>
                             </div>
